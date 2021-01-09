@@ -1,0 +1,40 @@
+//Styles in node-modules folder are ignored(read and recognice variables), it's required use custom.css to edit styles
+
+//Background-color of cards
+
+$primary: #fdccc6; // 1
+$success: #fcb2aa; // 2
+$warning: #fb968b; // 5
+$secondary: #edf2f8; // 3 & 4
+
+@media (min-width:992px) {
+    .alto-100 {
+        height: 100vh;
+    }
+}
+
+.d-flex img {
+    width: 60px;
+}
+
+.bg-card {
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 85% 8px;
+}
+// Agregar clase a la primera card
+.quotation {
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 85% top;
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
